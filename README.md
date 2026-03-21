@@ -1,104 +1,105 @@
-**# Scorpion Phylogeny \& Population Genetics**
+# Scorpion Phylogeny & Population Genetics
 
+![R](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![Phylogenetics](https://img.shields.io/badge/Phylogenetics-Analysis-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge)
 
+---
 
-**#\*\* Author**
+## Author
 
 Assistant Lecturer: Shorouk Aldeyarbi  
-
 Faculty of Science, Port Said University, Egypt  
 
+---
 
+## Related Publication
 
-**#\*\* Related Publication**
+Evaluating cytochrome C oxidase subunit 1 and NADH dehydrogenase 1 mitochondrial genes for five Buthidae scorpions.  
 
-Evaluating cytochrome C oxidase subunit 1 and NADH dehydrogenase 1 mitochondrial genes for five Buthidae scorpions.
+DOI: 10.7324/JABB.2026.272599  
 
-&#x20;                                        (DOI: 10.7324/JABB.2026.272599)
+---
 
-
-
-**#\*\* Overview**
+## Overview
 
 This project performs phylogenetic and population genetic analyses of Buthidae scorpions using mitochondrial markers:
 
+- Cytochrome Oxidase I (COI)  
+- NADH Dehydrogenase 1 (ND1)  
 
+---
 
-\- Cytochrome Oxidase I (COI)
+## Methods
 
-\- NADH Dehydrogenase 1 (ND1)
+- Multiple Sequence Alignment (DECIPHER)  
+- Genetic Distance Analysis (TN93 model)  
+- Phylogenetic Tree Reconstruction  
+- Mantel Test (distance correlation)  
+- Substitution Saturation Analysis (Iss)  
+- Base Composition Analysis  
 
+---
 
+## Outputs
 
-**#\*\* Methods**
+- Genetic distance heatmaps  
+- Phylogenetic trees  
+- Mantel correlation plots  
+- Saturation test plots  
 
-\- Multiple Sequence Alignment (DECIPHER)
+---
 
-\- Genetic Distance Analysis (TN93 model)
+## Requirements
 
-\- Phylogenetic Tree Reconstruction
+```r
+ape
+DECIPHER
+ggtree
+pheatmap
+vegan
+adegenet
+hierfstat
+seqinr
+```
 
-\- Mantel Test (Distance Correlation)
+---
 
-\- Substitution Saturation Analysis (Iss)
+## Project Structure
 
-\- Base Composition Analysis
+```
+DATA/      → raw sequences and trees  
+scripts/   → analysis scripts  
+outputs/   → figures and plots  
+```
 
+---
 
-
-**#\*\*  Outputs**
-
-\- Genetic distance heatmaps
-
-\- Phylogenetic trees
-
-\- Mantel correlation plots
-
-\- Saturation test plots
-
-
-
-**#\*\* Requirements**
-
-
-
-***R packages***:ape, DECIPHER, ggtree, pheatmap, vegan, adegenet, hierfstat, seqinr
-
-
-
-
-
-
-
-**#\*\* Structure**
-
-\- `DATA/` → raw sequences and trees  
-
-\- `scripts/` → analysis scripts  
-
-\- `outputs/` → figures  
-
-
-
-**#\*\* Notes**
-
-COI showed higher phylogenetic resolution compared to ND1, which exhibited substitution saturation.
-
-
-
-#** Results
+## Results
 
 ### Phylogenetic Tree (COI)
 ![COI Tree](Outputs/COXtree_plot.jpg)
 
+---
+
 ### Genetic Distance Heatmap
 ![Heatmap](Outputs/COX_heatmap_output.png)
 
+---
+
 ### Mantel Test
 ![Mantel](Outputs/CO1_ND1_MantelPlot.png)
-Outputs/Iss_Test_plot.png
+
+---
+
+### Substitution Saturation (Iss Test)
 ![ISS-TEST](Outputs/Iss_Test_plot.png)
 
+---
+
+## Notes
+
+COI demonstrated higher phylogenetic resolution compared to ND1, which showed evidence of substitution saturation.
 
 
 
